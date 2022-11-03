@@ -1,0 +1,23 @@
+{
+  "name": "ecv-node-01",
+  "version": "1.0.0",
+  "description": "Découverte de Node.js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaynalHugo/ECV-node-01.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaynalHugo/ECV-node-01/issues"
+  },
+  "homepage": "https://github.com/RaynalHugo/ECV-node-01#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
