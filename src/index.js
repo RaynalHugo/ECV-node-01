@@ -1,16 +1,12 @@
 import fs from "fs/promises";
 
-function getPackageJsonVersion() {
-  const result = fs.readFile("./package.json");
-  return result.then((data) => {
-    console.log("fini");
+async function getPackageJsonVersion() {
+  const data = await fs.readFile("./package.json");
+  const string = data.toString();
+  const json = JSON.parse(string);
+  return json.version;
+}
 
-    const string = data.toString();
-    const json = JSON.parse(string);
-    return json.version;
-  });
-};
-
-const version = getPackageJsonVersion();
-console.log('version:', version)
-version.then(console.log);
+const version = await getPackageJsonVersion();
+console.log("version:", version);
+console.log("hello");
