@@ -1,6 +1,6 @@
 {
   "name": "ecv-node-01",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Découverte de Node.js",
   "main": "src/index.js",
   "type": "module",
